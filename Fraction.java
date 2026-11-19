@@ -51,4 +51,9 @@ public class Fraction {
 	}
 
 }
+	public static Fraction mult (Fraction a, Fraction b) {
+	int n = a.getNum() * b.getNum();
+	int d = a.getNum() * b.getDenom();
+	return new Fraction(n,d);
+}
 }
