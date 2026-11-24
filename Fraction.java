@@ -4,8 +4,8 @@ public class Fraction {
 
     // constructor (new)
     public Fraction() { // default constructor
-        numerator = 1;
-        denominator = 1;
+        numerator = (int)(Math.random() * 9) + 1;
+        denominator = (int)(Math.random() * 9) + 1;
     }
     public Fraction(String f) {
         int slashIndex = f.indexOf("/");
