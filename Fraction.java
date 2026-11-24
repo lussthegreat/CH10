@@ -80,4 +80,20 @@ public class Fraction {
 		answer.reduce();
 		return answer;
 	}
+	public static Fraction add(Fraction a, Fraction b) {
+		int n = (a.getNum() * b.getDenom()) + (b.getNum() * a.getDenom());
+		int d = a.getDenom() * b.getDenom();
+		Fraction answer = new Fraction(n, d);
+		answer.reduce();
+		return answer;
+}
+
+
+	public static Fraction subtract(Fraction f1, Fraction f2) {
+		int n = (f1.numerator * f2.denominator) - (f2.numerator * f1.denominator);
+		int d = f1.denominator * f2.denominator;
+		Fraction answer = new Fraction(n,d);
+		answer.reduce();
+		return answer;
+}
 }
