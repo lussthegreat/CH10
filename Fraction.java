@@ -96,4 +96,11 @@ public class Fraction {
 		answer.reduce();
 		return answer;
 }
+	public boolean equals(Fraction a) {
+		if (numerator == a.getNum() && denominator == a.getDenom()) {
+			return true;
+		} else {
+			return false;
+}
+}
 }
