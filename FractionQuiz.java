@@ -41,7 +41,8 @@ public class FractionQuiz {
 			} else {
 				System.out.println("Wrong, the answer was " + correctAnswer.toString());
 			}
-			//System.out.println
-}
+			} 
+			int PercentCorrect = correctCount/totalAnswered;
+			System.out.println("You answered " + correctCount + "/" + totalAnswered + ", for a score of " + PercentCorrect + " percent");
 }
 }
